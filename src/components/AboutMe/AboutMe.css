@@ -1,0 +1,33 @@
+.selfie{
+    height: 200px;
+    margin: auto;
+}
+.div-selfie{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.about-div{
+    width: 100%;
+    height: 92%;
+    overflow-y:scroll;
+    padding: 1rem;
+}
+.name{
+    text-align: center;
+    margin: 1rem;
+}
+
+.about-div-text{
+    margin: 1rem;
+    margin: auto;
+    width: 60%;
+    min-height: 100px;
+    height: auto;
+    
+
+}

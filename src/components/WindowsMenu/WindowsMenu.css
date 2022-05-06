@@ -1,0 +1,8 @@
+.WindowsMenu{
+    width: 320px;
+    height: 600px;
+    background-color: red;
+    position: fixed;
+    bottom:5%;
+    background-color: rgba(32, 31, 28, 0.985);
+}
