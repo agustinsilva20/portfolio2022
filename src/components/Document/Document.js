@@ -1,8 +1,8 @@
 import React,{Component} from "react";
 import "./Document.css"
-import AboutMe from "../AboutMe/AboutMe"
-import Studies from "../Studies/Studies"
-import Skills from "../Skills/Skills"
+
+import Uade from "../../studies/UADEComponent/Uade";
+
 /*xdd : https://agustinsilva20.github.io/portfolio2022/*/
 
 class Document extends Component{
@@ -23,9 +23,7 @@ class Document extends Component{
                     </div>
                 </div>
                 <div className="showingBody">
-                {this.props.showing==="About Me"?<AboutMe/>:null}
-                {this.props.showing==="Studies"?<Studies addMenuOpenApp_showingFile={this.props.addMenuOpenApp_showingFile}/>:null}
-                {this.props.showing==="Skills"?<Skills/>:null} 
+                    {this.props.showing==="UADE"?<Uade/>:null}
                 </div>
            </div>
         )

@@ -1,0 +1,32 @@
+.uade-div {
+    width: 100%;
+    text-align: center;
+}
+.uade-div img{
+    width: 100%;
+    margin:auto;
+}
+
+.uade-div span{
+    color: rgb(24, 24, 136);
+}
+
+.uade-div a{
+    text-decoration: none;
+    color: white;
+    width: 200px !important;
+}
+
+.btnUrl{
+    background-color: rgb(24, 24, 136);
+    width: 200px !important;
+    margin:auto;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border-radius: .25em;
+    transition: .3s ease all;
+}
+
+.btnUrl:hover{
+    background-color: rgb(46, 46, 196);
+}

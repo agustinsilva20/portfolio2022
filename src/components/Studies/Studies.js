@@ -13,7 +13,7 @@ class Studies extends Component{
             <div className="Studies">
                <div className="category-line"><p class="category-text">University</p><div className="line"></div></div>
                 <div className="category-div">
-                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"pdf")}><DesktopFiles name="Software Engineering" img="pdf.png" classNew="pdf"/></div>
+                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"UADE")}><DesktopFiles name="Software Engineering" img="pdf.png" classNew="pdf"/></div>
                 </div>
 
                <div className="category-line"><p class="category-text">English</p><div className="line"></div></div>
