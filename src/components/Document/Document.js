@@ -1,13 +1,13 @@
 import React,{Component} from "react";
-import "./FileExplorer.css"
+import "./Document.css"
 import AboutMe from "../AboutMe/AboutMe"
 import Studies from "../Studies/Studies"
 import Skills from "../Skills/Skills"
 /*xdd : https://agustinsilva20.github.io/portfolio2022/*/
 
-class FileExplorer extends Component{
+class Document extends Component{
     close=(app)=>{
-        this.props.removeMenuOpenApp(app)
+        this.props.removeMenuOpenApp_showingFile(app)
         this.props.changeShowing("nothing")
     }
     render(){
@@ -24,11 +24,11 @@ class FileExplorer extends Component{
                 </div>
                 <div className="showingBody">
                 {this.props.showing==="About Me"?<AboutMe/>:null}
-                {this.props.showing==="Studies"?<Studies addMenuOpenApp_showingFile={this.props.addMenuOpenApp_showingFile} changeShowingFile={this.props.changeShowingFile}/>:null}
-                {this.props.showing==="Skills"?<Skills/>:null}
+                {this.props.showing==="Studies"?<Studies addMenuOpenApp_showingFile={this.props.addMenuOpenApp_showingFile}/>:null}
+                {this.props.showing==="Skills"?<Skills/>:null} 
                 </div>
            </div>
         )
     }
 }
-export default FileExplorer;
+export default Document;

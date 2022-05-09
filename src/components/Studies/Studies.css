@@ -1,0 +1,32 @@
+.Studies{
+    padding: 1rem;
+}
+.category-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.line{
+    background-color: rgba(0, 0, 0, 0.116);
+    width: 100%;
+    height: 1px;
+    margin-left: 1rem;
+}
+.category-text{
+    color: rgb(35, 35, 122);
+    text-align: center;
+}
+
+.Studies .file p{
+    color: black;
+    -webkit-text-stroke: 0px
+}
+
+.category-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}

@@ -24,13 +24,31 @@ class Navbar extends Component{
                         {/*Apps oppen*/}
                         {
                             this.props.menuOpenApps.map((app,i)=>{
-                                return(
-                                    <div>
-                                        <div onClick={this.props.changeShowing.bind(this,app)}className={`icon-navbar-div`}>
-                                            <img alt="windows" src={`./images/${app}.png`} className="icon-nav"></img>
+                                if (app.type==="folder"){
+                                    return(
+                                    
+                                        <div>
+                                            <div onClick={this.props.changeShowing.bind(this,app.openApp)}className={`icon-navbar-div`}>
+                                                <img alt="windows" src={`./images/${app.openApp}.png`} className="icon-nav"></img>
+                                            </div>
                                         </div>
-                                    </div>
-                                )})
+                                    )}
+                                else{
+                                    return(
+                                    
+                                        <div>
+                                            <div onClick={this.props.changeShowingFile.bind(this,app.openApp)}className={`icon-navbar-div`}>
+                                                <img alt="windows" src={`./images/${app.openApp}.png`} className="icon-nav"></img>
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                                }
+                                
+                                    
+                            )
+                                
+                                
 
                         }
                         

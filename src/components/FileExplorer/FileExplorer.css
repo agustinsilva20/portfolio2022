@@ -3,6 +3,13 @@
     height: 80%;
     background-color: white;
     box-shadow:2px 2px 4px 4px rgba(0, 0, 0, 0.192);
+    margin: 1rem;
+  
+}
+
+.showingBody{
+    overflow-y: scroll;
+    height: 94%;
 }
 
 .header-fileexplorer{
