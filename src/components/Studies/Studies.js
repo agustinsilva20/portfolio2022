@@ -24,13 +24,13 @@ class Studies extends Component{
 
                 <div className="category-line"><p class="category-text">Certifications</p><div className="line"></div></div>
                 <div className="category-div">
-                <div className="file"><DesktopFiles name="Web FullStack NodeJS" img="utn.png" classNew="pdf"/></div>
-                    <div className="file"><DesktopFiles name="API Web Services NodeJS" img="eit.png" classNew="pdf"/></div>
-                    <div className="file"><DesktopFiles name="ASP.NET Core MVC" img="eit.png" classNew="pdf"/></div>
-                    <div className="file"><DesktopFiles name="Angular 11" img="eit.png" classNew="pdf"/></div>
-                    <div className="file"><DesktopFiles name="Web C# .NET" img="eit.png" classNew="pdf"/></div>
-                    <div className="file"><DesktopFiles name="Web API .NET Core" img="eit.png" classNew="pdf"/></div>
-                    <div className="file"><DesktopFiles name="HTML5 and CSS" img="eit.png" classNew="pdf"/></div>
+                <div className="file"  onClick={this.props.addMenuOpenApp_showingFile.bind(this,"Fullstack UTN")}><DesktopFiles name="Web FullStack NodeJS" img="utn.png" classNew="pdf"/></div>
+                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"API Web Services")}><DesktopFiles name="API Web Services NodeJS" img="eit.png" classNew="pdf"/></div>
+                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"ASP.NET Core MVC")}><DesktopFiles name="ASP.NET Core MVC" img="eit.png" classNew="pdf"/></div>
+                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"Angular 11")}><DesktopFiles name="Angular 11" img="eit.png" classNew="pdf"/></div>
+                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"Web C# .NET")}><DesktopFiles name="Web C# .NET" img="eit.png" classNew="pdf"/></div>
+                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"Web API .NET Core")}><DesktopFiles name="Web API .NET Core" img="eit.png" classNew="pdf"/></div>
+                    <div className="file" onClick={this.props.addMenuOpenApp_showingFile.bind(this,"HTML and CSS")}><DesktopFiles name="HTML5 and CSS" img="eit.png" classNew="pdf"/></div>
                 </div>
 
            </div>

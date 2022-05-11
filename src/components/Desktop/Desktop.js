@@ -26,7 +26,7 @@ class Desktop extends Component{
             <div className="desktop">
             <div className="files">
                 <div onClick={this.open.bind(this,"About Me")}><DesktopFiles name="About Me" img="me.webp" classNew="am" /></div>
-                <div onClick={this.open.bind(this,"GitHub")}><DesktopFiles name="GitHub" img="git.jpg" classNew="am"/></div>
+                <a href="https://github.com/agustinsilva20" target="_blank"><div><DesktopFiles name="GitHub" img="git.jpg" classNew="am"/></div></a>
                 <div onClick={this.open.bind(this,"Studies")}><DesktopFiles name="Studies" img="folder.png"/></div>
                 <div onClick={this.open.bind(this,"Skills")}><DesktopFiles name="Skills" img="folder.png"/></div>
                 <div onClick={this.open.bind(this,"Experience")}><DesktopFiles name="Experience" img="folder.png" /></div>

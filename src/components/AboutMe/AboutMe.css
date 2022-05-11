@@ -14,7 +14,6 @@
 .about-div{
     width: 100%;
     height: 92%;
-    overflow-y:scroll;
     padding: 1rem;
 }
 .name{
@@ -30,4 +29,35 @@
     height: auto;
     
 
+}
+
+.languaje{
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    
+}
+.languaje span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid rgb(17, 17, 112);
+    border-radius: 0.25em;
+    color: white;
+    background-color: rgb(24, 24, 139);
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.languaje span:hover{
+    background-color: rgb(29, 29, 173);
+}
+
+.about-text p{
+    margin-bottom: .2rem;
 }

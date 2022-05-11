@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Desktop from "../Desktop/Desktop"
 import WindowsMenu from "../WindowsMenu/WindowsMenu"
 import { toHaveStyle } from "@testing-library/jest-dom/dist/matchers";
-
+/* "homepage": "https://agustinsilva20.github.io/portfolio2022",*/
 class MainComponent extends Component{
     constructor(props){
         super(props)
@@ -28,12 +28,22 @@ class MainComponent extends Component{
     }
 
     addMenuOpenApp=(app)=>{
+        let found=0
+        for (let i=0; i< this.state.menuOpenApps.length;i++){
+            if( this.state.menuOpenApps[i].openApp==app){
+                found=found+1;
+            }   
+        }
+        if (found==0){
+            let aux=this.state.menuOpenApps
+            aux.push({openApp:app,type:"folder"})
+            this.setState({menuOpenApps:aux})
+        }
+
+
         /*let aux=this.state.menuOpenApps
-        aux.push(app)
-        this.setState({menuOpenApps:aux})*/
-        let aux=this.state.menuOpenApps
         aux.push({openApp:app,type:"folder"})
-        this.setState({menuOpenApps:aux})
+        this.setState({menuOpenApps:aux})*/
 
     }
 
@@ -59,11 +69,22 @@ class MainComponent extends Component{
     }
 
     addMenuOpenApp_showingFile=(app)=>{
-        let aux=this.state.menuOpenApps
-        aux.push({openApp:app,type:"file"})
+    
 
-        this.setState({menuOpenApps:aux})
-        this.setState({showingFile:app})
+        let found=0
+        for (let i=0; i< this.state.menuOpenApps.length;i++){
+            if( this.state.menuOpenApps[i].openApp==app){
+                found=found+1;
+            }   
+        }
+        if (found==0){
+            let aux=this.state.menuOpenApps
+            aux.push({openApp:app,type:"file"})
+
+            this.setState({menuOpenApps:aux})
+            this.setState({showingFile:app})
+        }
+
 
     }
 
