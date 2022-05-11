@@ -6,7 +6,7 @@ class WindowsMenu extends Component{
 
     render(){
         return(
-           <div className="WindowsMenu">
+           <div className={`WindowsMenu ${this.props.color}`}>
             
            </div>
         )

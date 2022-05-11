@@ -13,7 +13,9 @@ class MainComponent extends Component{
             WindowsMenu:false,
             menuOpenApps:[],
             showing:"nothing",
-            showingFile:"nothing"
+            showingFile:"nothing",
+            background:"wallpaper",
+            color:"color1"
         } 
     }
     
@@ -96,18 +98,30 @@ class MainComponent extends Component{
             
         )
     }
+
+    changeBackground=(wallpaper)=>{
+        this.setState({
+            background:wallpaper
+        })
+    }
+
+    changeColor=(colorNew)=>{
+        this.setState({
+            color:colorNew
+        })
+    }
     
 
     render(){
         return(
             <div>
-                {this.state.screen==="desktop"?<Desktop changeShowing={this.changeShowing} showing={this.state.showing } 
+                {this.state.screen==="desktop"?<Desktop background={this.state.background}changeShowing={this.changeShowing} showing={this.state.showing } 
                 addMenuOpenApp={this.addMenuOpenApp} menuOpenApps={this.state.menuOpenApps} removeMenuOpenApp={this.removeMenuOpenApp} showingFile={this.state.showingFile}
                 changeShowingFile={this.changeShowingFile} addMenuOpenApp_showingFile={this.addMenuOpenApp_showingFile} removeMenuOpenApp_showingFile={this.removeMenuOpenApp_showingFile}
-                />
+                changeBackground={this.changeBackground} changeColor={this.changeColor}/>
                 :null}
-            {this.state.WindowsMenu===true?<WindowsMenu/>:null}
-            <Navbar toggleMenu={this.toggleMenu} menuOpenApps={this.state.menuOpenApps} changeShowing={this.changeShowing} changeShowingFile={this.changeShowingFile}/>
+            {this.state.WindowsMenu===true?<WindowsMenu color={this.state.color}/>:null}
+            <Navbar toggleMenu={this.toggleMenu} menuOpenApps={this.state.menuOpenApps} changeShowing={this.changeShowing} changeShowingFile={this.changeShowingFile} color={this.state.color}/>
            </div>
         )
     }

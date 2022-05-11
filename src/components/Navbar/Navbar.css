@@ -16,16 +16,12 @@
     justify-content: center;align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    
 }
 .icon-nav{
     cursor: pointer;
     height: 60%;
    
-}
-
-.icon-navbar-div:hover{
-    background-color: rgb(51, 51, 50);
-
 }
 
 .left-nav{
@@ -39,6 +35,48 @@
    
 }
 
-.right-nav:hover{
+
+.WindowsMenu{
+    position: relative;
+    z-index: 10;
+}
+
+.color1{
+    background-color: rgb(32,31,28);
+}
+.hover-color1:hover{
     background-color: rgb(51, 51, 50);
+}
+
+.color2{
+    background-color: rgb(177, 47, 47);
+}
+
+.hover-color2:hover{
+    background-color: rgb(216, 58, 58);
+}
+
+
+.color3{
+    background-color: rgb(120, 27, 196);
+}
+
+.hover-color3:hover{
+    background-color: rgb(152, 40, 243);
+}
+
+.color4{
+    background-color: rgb(20, 92, 20);
+}
+
+.hover-color4:hover{
+    background-color: rgb(29, 133, 29);
+}
+
+.color5{
+    background-color: rgb(46, 228, 228);
+}
+
+.hover-color5:hover{
+    background-color: rgb(42, 173, 173);
 }

@@ -1,0 +1,23 @@
+.settings{
+    padding: 1rem;
+}
+.listBackgrounds{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.bckimg{
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+
+}
+
+.bckimg img{
+    width: 100%;
+    height: 100%;
+}

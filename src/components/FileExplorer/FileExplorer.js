@@ -4,6 +4,7 @@ import AboutMe from "../AboutMe/AboutMe"
 import Studies from "../Studies/Studies"
 import Skills from "../Skills/Skills"
 import Experience from "../Experience/Experience";
+import Settings from "../Settings/Settings";
 /*xdd : https://agustinsilva20.github.io/portfolio2022/*/
 
 class FileExplorer extends Component{
@@ -25,9 +26,10 @@ class FileExplorer extends Component{
                 </div>
                 <div className="showingBody">
                 {this.props.showing==="About Me"?<AboutMe/>:null}
-                {this.props.showing==="Studies"?<Studies addMenuOpenApp_showingFile={this.props.addMenuOpenApp_showingFile} changeShowingFile={this.props.changeShowingFile}/>:null}
+                {this.props.showing==="Estudies"?<Studies addMenuOpenApp_showingFile={this.props.addMenuOpenApp_showingFile} changeShowingFile={this.props.changeShowingFile}/>:null}
                 {this.props.showing==="Skills"?<Skills/>:null}
                 {this.props.showing==="Experience"?<Experience/>:null}
+                {this.props.showing==="Settings"?<Settings changeBackground={this.props.changeBackground} changeColor={this.props.changeColor}/>:null}
                 </div>
            </div>
         )

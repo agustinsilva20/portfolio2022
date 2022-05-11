@@ -12,13 +12,13 @@ class Navbar extends Component{
     render(){
         return(
         
-           <div className="navbar">
+           <div className={`navbar ${this.props.color}`}>
                {}
                 <div className="left-nav">
-                        <div className="icon-navbar-div" onClick={this.props.toggleMenu}>
+                        <div className={`icon-navbar-div ${this.props.color} hover-${this.props.color}`} onClick={this.props.toggleMenu}>
                         <img alt="windows" src="./images/windows.png" className="icon-nav"></img>
                         </div>
-                        <div className="icon-navbar-div">
+                        <div className={`icon-navbar-div ${this.props.color} hover-${this.props.color}`}>
                         <img alt="windows" src="./images/file-icon.png" className="icon-nav"></img>
                         </div>
                         {/*Apps oppen*/}
@@ -28,7 +28,7 @@ class Navbar extends Component{
                                     return(
                                     
                                         <div>
-                                            <div onClick={this.props.changeShowing.bind(this,app.openApp)}className={`icon-navbar-div`}>
+                                            <div onClick={this.props.changeShowing.bind(this,app.openApp)}className={`icon-navbar-div ${this.props.color} hover-${this.props.color}`}>
                                                 <img alt="windows" src={`./images/${app.openApp}.png`} className="icon-nav"></img>
                                             </div>
                                         </div>
@@ -37,7 +37,7 @@ class Navbar extends Component{
                                     return(
                                     
                                         <div>
-                                            <div onClick={this.props.changeShowingFile.bind(this,app.openApp)}className={`icon-navbar-div`}>
+                                            <div onClick={this.props.changeShowingFile.bind(this,app.openApp)}className={`icon-navbar-div ${this.props.color} hover-${this.props.color}`}>
                                                 <img alt="windows" src={`./images/${app.openApp}.png`} className="icon-nav"></img>
                                             </div>
                                         </div>

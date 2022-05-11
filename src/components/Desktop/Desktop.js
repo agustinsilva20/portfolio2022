@@ -23,21 +23,23 @@ class Desktop extends Component{
     }
     render(){
         return(
-            <div className="desktop">
+            <div className={`desktop ${this.props.background}`}>
             <div className="files">
                 <div onClick={this.open.bind(this,"About Me")}><DesktopFiles name="About Me" img="me.webp" classNew="am" /></div>
                 <a href="https://github.com/agustinsilva20" target="_blank"><div><DesktopFiles name="GitHub" img="git.jpg" classNew="am"/></div></a>
-                <div onClick={this.open.bind(this,"Studies")}><DesktopFiles name="Studies" img="folder.png"/></div>
+                <div onClick={this.open.bind(this,"Estudies")}><DesktopFiles name="Estudies" img="folder.png"/></div>
                 <div onClick={this.open.bind(this,"Skills")}><DesktopFiles name="Skills" img="folder.png"/></div>
                 <div onClick={this.open.bind(this,"Experience")}><DesktopFiles name="Experience" img="folder.png" /></div>
                 <div onClick={this.open.bind(this,"Projects")}><DesktopFiles name="Some proyects" img="proyects.png" classNew="am2"/></div>
+                <div onClick={this.open.bind(this,"Settings")}><DesktopFiles name="Settings" img="Settings.png" classNew="am2"/></div>
                
 
             </div>
             <div className="screenSize">
             {this.props.showing==="nothing"?null:
                 <FileExplorer changeShowing={this.props.changeShowing} showing={this.props.showing} removeMenuOpenApp={this.props.removeMenuOpenApp} 
-                addMenuOpenApp_showingFile={this.props.addMenuOpenApp_showingFile} changeShowingFile={this.props.changeShowingFile}/>
+                addMenuOpenApp_showingFile={this.props.addMenuOpenApp_showingFile} changeShowingFile={this.props.changeShowingFile}
+                changeBackground={this.props.changeBackground} changeColor={this.props.changeColor}/>
             }
             {this.props.showingFile==="nothing"?null:
                 <Document changeShowing={this.props.changeShowingFile} showing={this.props.showingFile} removeMenuOpenApp_showingFile={this.props.removeMenuOpenApp}/>}

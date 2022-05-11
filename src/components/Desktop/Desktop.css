@@ -8,6 +8,39 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
+    
+}
+
+.wallpaper{
+    background-image: url("../../../public/images/wallpaper.jpg");
+}
+.wallpaper2{
+    background-image: url("../../../public/images/wallpaper2.jpg");
+}
+.wallpaper3{
+    background-image: url("../../../public/images/wallpaper3.webp");
+}
+
+.wallpaper4{
+    background-image: url("../../../public/images/wallpaper4.jpg");
+}
+
+.wallpaper5{
+    background-image: url("../../../public/images/wallpaper5.jpg");
+}
+
+.wallpaper6{
+    background-image: url("../../../public/images/wallpaper6.jpg");
+}
+.wallpaper7{
+    background-image: url("../../../public/images/wallpaper7.jpg");
+}
+.wallpaper8{
+    background-image: url("../../../public/images/wallpaper8.png");
+}
+
+.wallpaper9{
+    background-image: url("../../../public/images/wallpaper9.jpg");
 }
 
 .files{
@@ -20,6 +53,13 @@ a{
     flex-direction: column;
     gap: 3rem;
     flex-wrap: wrap;
+    z-index: 3; 
+
+    position: relative;
+}
+
+.desktop-file{
+    z-index: 3;
 }
 .screenSize{
 
@@ -33,4 +73,8 @@ a{
         justify-content: center;
         align-items: center;
 
+}
+.fileExplorer{
+    z-index: 5;
+    position: relative;
 }
